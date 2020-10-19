@@ -1,4 +1,4 @@
-import { isNumberCheck } from '~/lib/validations'
+import { isNumberCheck } from '~/lib/validations.js'
 
 export const money = val => {
   val = parseFloat(val)
