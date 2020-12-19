@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front
+  namespace: app-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front
+  template:
+    metadata:
+      labels:
+        app: front
+    spec:
+      containers:
+        - name: front
+          image: <IMAGE>
+          ports:
+            - containerPort: 3000
+          env:
+          - name: APP_ENV
+            value: 'production'
+          - name: API_URL
+            value: 'https://api.app.com'
+          imagePullPolicy: Always
+      imagePullSecrets:
+        - name: regcred
