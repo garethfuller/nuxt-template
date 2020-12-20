@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: front
-  namespace: app-namespace
+  namespace: <NAMESPACE>
 spec:
   replicas: 1
   selector:
@@ -22,7 +22,7 @@ spec:
           - name: APP_ENV
             value: 'production'
           - name: API_URL
-            value: 'https://api.app.com'
+            value: 'https://<API_DOMAIN>'
           imagePullPolicy: Always
       imagePullSecrets:
         - name: regcred

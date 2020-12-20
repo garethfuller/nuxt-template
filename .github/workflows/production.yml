@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_PATH: garethfuller/app
-  URL: https://app.com
-  K8S_NAMESPACE: app
+  IMAGE_PATH: <FRONT_IMAGE_PATH>
+  URL: https://<FRONT_DOMAIN>
+  K8S_NAMESPACE: <NAMESPACE>
   K8S_DEPLOYMENT: front
 
 jobs:
