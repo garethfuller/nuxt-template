@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_PATH: <FRONT_IMAGE_PATH>
+  IMAGE_PATH: <DOCKER_USERNAME>/<NAMESPACE>-front
   URL: https://<FRONT_DOMAIN>
   K8S_NAMESPACE: <NAMESPACE>
   K8S_DEPLOYMENT: front
