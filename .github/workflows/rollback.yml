@@ -8,10 +8,10 @@ on:
         required: true
 
 env:
-  IMAGE_PATH: <DOCKER_USERNAME>/<NAMESPACE>-front
-  URL: https://<FRONT_DOMAIN>
+  IMAGE_PATH: <DOCKER_USERNAME>/<NAMESPACE>-web
+  URL: https://<WEB_DOMAIN>
   K8S_NAMESPACE: <NAMESPACE>
-  K8S_DEPLOYMENT: front
+  K8S_DEPLOYMENT: web
 
 jobs:
   deploy:

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: front
+  name: web
   namespace: <NAMESPACE>
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: front
+      app: web
   template:
     metadata:
       labels:
-        app: front
+        app: web
     spec:
       containers:
-        - name: front
+        - name: web
           image: <IMAGE>
           ports:
             - containerPort: 3000

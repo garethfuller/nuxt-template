@@ -30,5 +30,5 @@ COPY --from=build --chown=deploy:deploy /build/.nuxt ./.nuxt/
 CMD yarn run start
 
 # test build:
-# docker build -t <NAMESPACE>/front .
-# docker run --rm -p 3000:3000 <NAMESPACE>/front
+# docker build -t <NAMESPACE>/web .
+# docker run --rm -p 3000:3000 <NAMESPACE>/web
