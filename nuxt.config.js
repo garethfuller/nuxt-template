@@ -3,6 +3,10 @@ import { ogMeta } from './lib/meta'
 export default {
   loading: false,
 
+  server: {
+    host: '0.0.0.0'
+  },
+
   publicRuntimeConfig: {
     APP_ENV: process.env.APP_ENV || 'development',
     API_URL: process.env.API_URL || 'http://localhost:5000'
